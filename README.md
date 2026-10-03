@@ -78,7 +78,7 @@ Select several objects with Shift-click or a lasso. Position and size changes ap
 
 ### 4. Print or export
 
-The **ZPL** panel at the bottom shows the generated ZPL, **Copy** puts it on the clipboard. The canvas is an approximation. **Preview** renders the label through [Labelary](https://labelary.com/) or, on desktop, the connected printer.
+The **ZPL** panel at the bottom shows the generated ZPL, **Copy** puts it on the clipboard. The canvas shows the label as you design it. **Preview** adds an alternative rendering from the connected printer (desktop) or, with consent, from the third-party service [Labelary](https://labelary.com/).
 
 - **File → Export ZPL:** saves a `.zpl` file, or `.prn` where the save dialog offers file types
 - **File → Send to Zebra Printer:** opens the send dialog. It sends over the network, through the Zebra Browser Print agent in the browser, or through the system spooler or USB on desktop.
@@ -154,7 +154,7 @@ On desktop, **Connect data** also reads an Excel worksheet. **File → Settings�
 - Saved designs and label exports exclude **Setup Script** values such as printer name and locale.
 - **Clear** resets the **Setup Script** values and keeps the uploads.
 
-The **App → Printer** tab sets how labels are sent and to which printer. **Send to Zebra Printer** opens with that method selected. The **App → Preview** tab selects the renderer: Labelary, the connected printer, or off. It takes a premium Labelary endpoint and API key. The key is stored in the OS keychain on desktop and in browser storage on the web.
+The **App → Printer** tab sets how labels are sent and to which printer. **Send to Zebra Printer** opens with that method selected. The **App → Preview** tab selects the renderer: the connected printer (desktop), Labelary, or off. It takes a premium Labelary endpoint and API key. The key is stored in the OS keychain on desktop and in browser storage on the web.
 
 ### MCP server
 
