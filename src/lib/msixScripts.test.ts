@@ -4,14 +4,14 @@ import en from "../locales/en";
 import baseConfig from "../../src-tauri/tauri.conf.json";
 import msixConfig from "../../src-tauri/tauri.msix.conf.json";
 import { LOCALE_CODES, type LocaleCode } from "../locales";
-import { manifestExecutable, packageVersion, readManifest, stampVersion, storeVersion } from "../../scripts/msix.mjs";
+import { manifestExecutable, manifestLanguages, packageVersion, readManifest, stampVersion, storeVersion } from "../../scripts/msix.mjs";
 
 // Locale codes whose Store language tag is spelled differently.
 const STORE_TAG: Partial<Record<LocaleCode, string>> = { en: "en-US", no: "nb", sr: "sr-Cyrl", "zh-hans": "zh-Hans", "zh-hant": "zh-Hant" };
 
 describe("MSIX manifest", () => {
   it("declares every UI language, the default first", () => {
-    const tags = [...readManifest().matchAll(/<Resource Language="([^"]+)"/g)].map((m) => m[1]);
+    const tags = manifestLanguages(readManifest());
     expect(tags[0]).toBe("en-US");
     expect([...tags].sort()).toEqual(LOCALE_CODES.map((c) => STORE_TAG[c] ?? c).sort());
   });

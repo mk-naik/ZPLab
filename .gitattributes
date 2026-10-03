@@ -18,3 +18,7 @@ src-tauri/Cargo.toml text eol=lf
 
 # Generated from the command catalog; the check compares on LF.
 docs/zpl-coverage.md text eol=lf
+
+# Store listing texts: Partner Center would import a CR from a CRLF checkout
+# as part of each feature and keyword.
+store/**/*.txt text eol=lf

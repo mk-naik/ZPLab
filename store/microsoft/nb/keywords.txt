@@ -1,0 +1,7 @@
+ZPL editor
+etikettdesigner
+etikettprogram
+strekkodegenerator
+etikettskriver
+termisk skriver
+GS1 strekkode

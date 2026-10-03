@@ -28,3 +28,5 @@ export function stampVersion(manifest, version) {
 }
 
 export const manifestExecutable = (manifest) => /<Application\b[^>]*\bExecutable="([^"]+)"/.exec(manifest)?.[1];
+
+export const manifestLanguages = (manifest) => [...manifest.matchAll(/<Resource Language="([^"]+)"/g)].map((m) => m[1]);

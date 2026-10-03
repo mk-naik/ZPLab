@@ -1,0 +1,7 @@
+ZPL editor
+tvorba etiket
+tisk etiket
+generátor čárových kódů
+tiskárna etiket
+termotiskárna
+čárový kód GS1

@@ -19,6 +19,7 @@
     "attribution:gen": "node scripts/gen-attribution.mjs",
     "attribution:check": "node scripts/gen-attribution.mjs --check",
     "msix:build": "node scripts/build-msix.mjs",
+    "store:listing": "node scripts/build-store-listing.mjs",
     "coverage:gen": "node scripts/gen-coverage.mjs",
     "coverage:check": "node scripts/gen-coverage.mjs --check",
     "preview": "vite preview",

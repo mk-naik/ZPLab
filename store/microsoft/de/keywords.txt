@@ -1,0 +1,7 @@
+ZPL Editor
+Etiketten erstellen
+Etiketten drucken
+Barcode Generator
+Etikettendrucker
+Thermodrucker
+GS1 Barcode

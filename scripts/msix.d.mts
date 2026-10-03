@@ -4,3 +4,4 @@ export declare function storeVersion(version: string): string;
 export declare function packageVersion(store: string): string;
 export declare function stampVersion(manifest: string, version: string): string;
 export declare function manifestExecutable(manifest: string): string | undefined;
+export declare function manifestLanguages(manifest: string): string[];
